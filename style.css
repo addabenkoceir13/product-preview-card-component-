@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(250, 225, 225, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 800px;
+}
+
+.container {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    /* max-width: 600px; */
+}
+
+.container .img-left .desktop {
+    width: 300px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.container .img-left .mobile {
+    display: none;
+}
+
+.container .info {
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.container .info h5 {
+    color: silver;
+}
+
+.container .info h1 {
+    font-size: 35px;
+    line-height: 1;
+    font-family: 'Fraunces', serif;
+}
+
+.container .info p {
+    font-size: 15px;
+    color: silver;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container .info .prix-new {
+    font-family: 'Fraunces', serif;
+    font-size: 35px;
+    color: hsl(158, 36%, 37%);
+}
+
+.container .info .prix-old {
+    top: -5px;
+    margin-left: 20px;
+    position: relative;
+    color: silver;
+}
+
+.container .info a {
+    text-decoration: none;
+    color: white;
+    background-color: hsl(158, 36%, 37%);
+    padding: 10px 50px;
+    box-sizing: 10px;
+    top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+}
+
+.container .info a:hover {
+    background-color: hsl(158, 32%, 32%);
+}
+
+@media only screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .container {
+        padding-bottom: 20px;
+        width: 350px;
+    }
+    .container .img-left .desktop {
+        display: none;
+    }
+    .container .img-left .mobile {
+        display: block;
+        width: 350px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    .container .info {
+        position: relative;
+        top: -30px;
+        width: 300px;
+    }
+    .container .info h1 {
+        font-size: 30px;
+    }
+}
